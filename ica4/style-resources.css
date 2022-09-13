@@ -19,6 +19,7 @@ html {
 
 /* Rulesets to be matched up with selectors */
 
+
 .card{
   width: 35em;
   height: 22em;
@@ -43,7 +44,9 @@ html {
   
 }
 
+
 .card article img {
   max-height: 100%;
   float: right;
 }
+
