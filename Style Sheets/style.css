@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    background-color: #FCF8F0;
+    height: 1440 px;
+    width: 2560 px;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1{
+    color: #FCF8F0;
+    font-family: 'Raleway';
+    font-style: normal;
+}
+
+h2,h3{
+    color: #AD8843;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+
+h4,h5,h6,p{
+    color: #3C3A3A;
+    font-family: 'Mulish';
+    font-style: normal;
+}
+
+header{
+    background-color: #AD8843;
+}
+
+a{
+    color: #5EADCF;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #5EADCF;
+    text-decoration: underline;
+}
+
+a:visited{
+    color:#AD8843;
+    text-decoration: none;
+}
+
+hr{
+    border: 2px solid #3C3A3A;
+}
