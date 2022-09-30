@@ -7,13 +7,13 @@ body{
 
 img{
     max-width: 100%;
-    max-height: 100%;
 }
 
 h1{
     color: #FCF8F0;
     font-family: 'Raleway';
     font-style: normal;
+    padding: 0 1rem 0 1rem
 }
 
 h2,h3{
@@ -28,8 +28,18 @@ h4,h5,h6,p{
     font-style: normal;
 }
 
-header{
+nav{
     background-color: #AD8843;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: sticky;
+    top: 0;
+    border: solid #3C3A3A 2px;
+}
+
+.page_navigation{
+    display: flex;
+    flex-direction: row;
 }
 
 a{
@@ -49,4 +59,26 @@ a:visited{
 
 hr{
     border: 2px solid #3C3A3A;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5em;
+    padding: 2em 2em;
+}
+
+@media screen and (max-width: 600px){
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name1{
+        display: none;
+    }
+
+    .page_navigation{
+        
+    }
 }
