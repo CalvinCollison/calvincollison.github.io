@@ -61,15 +61,15 @@ hr{
     border: 2px solid #3C3A3A;
 }
 
-article{
+#content{
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 5em;
     padding: 2em 2em;
 }
 
-@media screen and (max-width: 600px){
-    article{
+@media screen and (max-width: 630px){
+    #content{
         display: flex;
         flex-direction: column;
     }
@@ -78,7 +78,4 @@ article{
         display: none;
     }
 
-    .page_navigation{
-        
-    }
 }
