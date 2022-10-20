@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const sources = ["images/pic1.gif", "images/warmwoods.jpg", "images/pizzaoven.png","images/pond1.jpeg","images/murphy2.png"];
+const sources = ["images/pic1.gif", "images/WarmWoods.JPG", "images/PizzaOven.png","images/Pond1.jpeg","images/Murphy2.png"];
 /* Declaring the alternative text for each image file */
 const altText = ["A cat swimming with fish", "Man sitting in a mountain forest", "A tasty pizza in a pizza oven", "A pond with a stone bridge", "A cat being a bit silly"]
 /* Looping through images */
