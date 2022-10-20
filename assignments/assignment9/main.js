@@ -5,9 +5,9 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
-const sources = ["images/pic1.jpg", "images/pic2.jpg", "images/pic3.jpg","images/pic4.jpg","images/pic5.jpg"];
+const sources = ["images/pic1.gif", "images/warmwoods.jpg", "images/pizzaoven.png","images/pond1.jpeg","images/murphy2.png"];
 /* Declaring the alternative text for each image file */
-const altText = ["Closeup of a human eye", "A layered rock formation", "Some purple flowers", "An Egyptian fresco of Anubis", "A moth on a large leaf"]
+const altText = ["A cat swimming with fish", "Man sitting in a mountain forest", "A tasty pizza in a pizza oven", "A pond with a stone bridge", "A cat being a bit silly"]
 /* Looping through images */
 
 
