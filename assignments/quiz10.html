@@ -43,11 +43,11 @@
       let male = 0;
 
       // Add your code here
-        const cats = catString.json();
+        const cats = JSON.parse(catString);
         let name;
         for(const mother of cats){
             name = mother.name;
-            motherInfo = `${motherInfo} ${name},`;
+            motherInfo += ` ${name},`;
             for(const kitten of mother){
                 total++;
                 if (kitten.gender === 'm'){
@@ -55,9 +55,8 @@
                 }
             }
         }
-        let female = total - male;
-        kittenInfo = `Total: ${total}, Male: ${male}, Female: ${female}.`;
-        motherInfo.replace(name, `and ${name}.`);
+        kittenInfo = `Total: ${total}, Male: ${male}, Female: ${total - male}.`;
+        motherInfo.replace(`${name},`, `and ${name}.`);
       // Don't edit the code below here!
 
       para1.textContent = motherInfo;
