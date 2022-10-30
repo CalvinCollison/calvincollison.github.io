@@ -42,7 +42,7 @@ let company = {
     companyName: "Tech Stars",
     website: "www.techstars.site",
     employees: [sam, mary, bill],
-    wfh: [anna, sam]
+    wfh: []
 }
 console.log(company);
 
@@ -74,7 +74,13 @@ function giveRaise(){
 giveRaise();
 //Problem 6
 console.log("Problem 6");
-for (let employee of company.wfh){
-    employee.workFromHome = true;
-    console.log(`${employee.firstName} works from home: ${employee.workFromHome}`);
+let empWFH = ['Anna', 'Sam']
+for (let name of empWFH){
+    for(let employee of company.employees){
+        if(name === employee.firstName){
+            employee.workFromHome = true;
+            company.wfh.push(name);
+            console.log(`${employee.firstName} works from home: ${employee.workFromHome}`);
+        }
+    }
 }
