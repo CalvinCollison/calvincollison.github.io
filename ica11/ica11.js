@@ -6,7 +6,6 @@ async function getQuote(){
     console.log("Button click");
     let response = await fetch(quoteApi);
     let json = await response.json();
-    //let json = JSON.parse(text);
 
     console.log(json['message']);
     displayQuote(json['message']);
