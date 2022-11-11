@@ -41,6 +41,7 @@ function reset(){
     index = 9;
 }
 
+
 function submit(){
    alert(output.textContent);
 }
