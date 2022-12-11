@@ -32,15 +32,60 @@ h4,h5,h6,p{
 nav{
     background-color: #AD8843;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 20fr 1fr; 
     position: sticky;
     top: 0;
-    border: solid #3C3A3A 2px;
+    border: none;
 }
 
-.page_navigation{
+.overlay{
+    position: fixed;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.sideNav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vh;
+    max-width: 100%;
+    height: 100vh;
+    z-index: 101;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: transform .2s ease;
+}
+
+.sideNav > ul {
+    list-style: none;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding-top: 4em;
+    padding-left: 4em;
+}
+
+.showNav{
+    transform: translateX(0);
+}
+
+.showOverlay{
+    display: block;
+}
+
+.menuX{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    background: none;
+    color: #FCF8F0;
+    border: none;
 }
 
 a{
@@ -52,6 +97,18 @@ a:hover{
     color: #5EADCF;
     text-decoration: underline;
 }
+
+.ham {
+    width: 4rem;
+    height: 4rem;
+    right: 5;
+    margin-left: 0.5rem;
+    margin-top: auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #FCF8F0;
+  }
 
 h1 a{
     color: #FCF8F0;
@@ -66,10 +123,8 @@ hr{
     grid-template-columns: 1fr 2fr;
     gap: 5em;
     padding: 5em 17%;
-    overflow: scroll;
 }
 #projects > .content{
-    height: 20em;
     grid-template-columns: 1fr 3fr;
 }
 
@@ -91,12 +146,31 @@ hr{
     
 }
 
+.projectPost > .content > p, h2{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1%;
+}
+
+.video > .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.videoPlayer{
+    width: 920px;
+    height: 540px;
+    max-width: 100%;
+}
+
 .projectPic{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 @media screen and (max-width: 1000px){
@@ -111,7 +185,8 @@ hr{
         padding: 2em 2em;
     }
 
-    #name1{
-        display: none;
+    .content > .thumbnail > img {
+        width: 20em;
+        max-height: none;
     }
 }

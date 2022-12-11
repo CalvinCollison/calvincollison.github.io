@@ -20,10 +20,33 @@
     <nav>
         <h1 id="name1">CALVIN COLLISON</h1>
         <div class="page_navigation">
-            <h1><u><a href="./index.html"> HOME</a></u></h1>
-            <h1><a href="./projects.html">PROJECTS</a></h1>
-            <h1><a href="./contact.html">CONTACT</a></h1>
+            <!-- <h1><a href="./index.html">HOME</a></h1>
+            <h1><u><a href="./projects.html">PROJECTS</a></u></h1> -->
+            <!-- <h1><a href="./contact.html">CONTACT</a></h1> -->
+            <button class="ham">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
+    </nav>
+    <div class="overlay"></div>
+    <nav class="sideNav">
+        <button class="menuX">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+        <ul>
+            <li><h1><a class="menuLink" href="./index.html">HOME</a></h1></li>
+            <li><h1><a class="menuLink" href="./projects.html">PROJECTS</a></h1>
+                <ul>
+                    <li><h1><a class="menuLink" href="./projectPages/project1.html">HEXAGON OPAL RING</a></h1></li>
+                </ul>
+            </li>
+            <li><h1><a class="menuLink" href="./contact.html">CONTACT</a></h1></li>
+            <li><h1><a class="menuLink" href="./video.html">VIDEOS I LIKE</a></h1></li>
+        </ul>
     </nav>
     <div>
         <div class="content">
@@ -35,5 +58,6 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
